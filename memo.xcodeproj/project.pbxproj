@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2926D9F423260C670043B68E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2926D9F323260C670043B68E /* AppDelegate.swift */; };
-		2926D9F623260C670043B68E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2926D9F523260C670043B68E /* ViewController.swift */; };
 		2926D9F923260C670043B68E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2926D9F723260C670043B68E /* Main.storyboard */; };
 		2926D9FB23260C680043B68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2926D9FA23260C680043B68E /* Assets.xcassets */; };
 		2926D9FE23260C680043B68E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2926D9FC23260C680043B68E /* LaunchScreen.storyboard */; };
 		2926DA0923260C680043B68E /* memoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2926DA0823260C680043B68E /* memoTests.swift */; };
 		2926DA1423260C680043B68E /* memoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2926DA1323260C680043B68E /* memoUITests.swift */; };
+		2926DA2223260DB90043B68E /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2926DA2123260DB90043B68E /* MemoListViewController.swift */; };
+		2926DA2423260DD10043B68E /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2926DA2323260DD10043B68E /* MemoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		2926D9F023260C670043B68E /* memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2926D9F323260C670043B68E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2926D9F523260C670043B68E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2926D9F823260C670043B68E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2926D9FA23260C680043B68E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2926D9FD23260C680043B68E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,9 @@
 		2926DA0F23260C680043B68E /* memoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2926DA1323260C680043B68E /* memoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoUITests.swift; sourceTree = "<group>"; };
 		2926DA1523260C680043B68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2926DA2123260DB90043B68E /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		2926DA2323260DD10043B68E /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		2926DA2D232616480043B68E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		2926D9E723260C660043B68E = {
 			isa = PBXGroup;
 			children = (
+				2926DA2D232616480043B68E /* README.md */,
 				2926D9F223260C670043B68E /* memo */,
 				2926DA0723260C680043B68E /* memoTests */,
 				2926DA1223260C680043B68E /* memoUITests */,
@@ -98,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				2926D9F323260C670043B68E /* AppDelegate.swift */,
-				2926D9F523260C670043B68E /* ViewController.swift */,
 				2926D9F723260C670043B68E /* Main.storyboard */,
+				2926DA2123260DB90043B68E /* MemoListViewController.swift */,
+				2926DA2323260DD10043B68E /* MemoDetailViewController.swift */,
 				2926D9FA23260C680043B68E /* Assets.xcassets */,
 				2926D9FC23260C680043B68E /* LaunchScreen.storyboard */,
 				2926D9FF23260C680043B68E /* Info.plist */,
@@ -256,7 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2926D9F623260C670043B68E /* ViewController.swift in Sources */,
+				2926DA2223260DB90043B68E /* MemoListViewController.swift in Sources */,
+				2926DA2423260DD10043B68E /* MemoDetailViewController.swift in Sources */,
 				2926D9F423260C670043B68E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -377,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
